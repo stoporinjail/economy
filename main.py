@@ -1,5 +1,6 @@
 prefix = '!'
 import random as r
+from badwords.csv import *
 money = 0
 def help():
   print(f'''Commands:
