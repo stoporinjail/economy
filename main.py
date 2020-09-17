@@ -46,5 +46,5 @@ while True:
       print('You lose your money. :(')
       money -= qq
   elif c == 'bal':
-    print(f'Your balance is {money})
+    print(f'Your balance is {money}')
     
