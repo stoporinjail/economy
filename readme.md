@@ -4,3 +4,7 @@
 ```
 git clone https://github.com/stoporinjail/economy
 ```
+# Run main.py
+```
+python main.py
+```
