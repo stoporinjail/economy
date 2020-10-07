@@ -1,6 +1,7 @@
 prefix = '!'
 import random as r
-from badwords.csv import *
+import sys
+
 money = 0
 def help():
   print(f'''Commands:
@@ -37,6 +38,9 @@ while True:
   elif c == prefix+'bet':
     qq = input('How much? ')
     qq = int(qq)
+    if qq > money:
+	    print("You don't have enough money")
+	    sys.exit(0)
     outcome = ['good','bad']
     r.shuffle(outcome)
     if outcome[0] == 'good':

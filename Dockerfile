@@ -1,6 +1,5 @@
-FROM python:3
+FROM python:3.8
 MAINTAINER stoporinjail
-RUN pip install requests
-ADD launcher.py
-CMD ["python", "launcher.py"]
+ADD main.py
+CMD ["python","main.py"]
 ENTRYPOINT ["python"]
