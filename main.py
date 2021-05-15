@@ -28,11 +28,11 @@ while True:
     outcome = ['good','bad']
     r.shuffle(outcome)
     if outcome[0] == 'good':
-      amount = r.randint(50,200)
+      amount = r.randint(100,500)
       print(f'You manage to steal ${amount}')
       money += amount
     else:
-      amount = r.randint(50,200)
+      amount = r.randint(100,5oo)
       print(f'You got caught, and pay ${amount}!')
       money -= amount
   elif c == prefix+'bet':
@@ -50,6 +50,6 @@ while True:
     else:
       print('You lose your money. :(')
       money -= qq
-  elif c == 'bal':
+  elif c == prefix+'bal':
     print(f'Your balance is {money}')
     
